@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- <link rel="stylesheet" href="styles/style.css".css"> -->
+   
+</head>
+<body class="bg-slate-800 h-screen flex justify-center items-center ">
+ <div class="card bg-gradient-to-r from-green-200 to-indigo-500  p-6 rounded-2xl shadow-lg">
+    <div class="search flex">
+        <input type="text"  class=" border border-white p-2 rounded-3xl w-full mr-2" placeholder="Enter the city name" spellcheck="false" />
+        <button class="bg-white text-white rounded-full p-2"><img class="" src="images/search.png" alt=""></button>           
+    </div>
+    <div class="weather space-y-5px">
+         <img src="images/mist.png" alt="" class="weather-icon pl-20 h-24">
+         <div class="weather-details  text-4xl text-white flex grid justify-center items-center font-bold space-y--5px">
+            <h1 class="temp pl-8"></h1>
+        <h2 class="city"></h2>
+         </div>
+        <div class="details flex justify-between">
+            <!-- humidity -->
+            <div class="col-1 flex space-x-2">
+                <img src="images/humidity.png" class="h-12 my-14" alt="">
+                <div class="humidity-details py-6 ">
+                    <h1 class="humidity-per text-2xl text-white font-bold mt-6"></h1>
+                    <h2 class=" text-white font-semibold">Humidity</h2>
+                </div>
+               
+            </div>
+            <!-- wind -->
+            <div class="col-2 flex">
+                <img src="images/wind.png" alt="" class="h-10 my-12">
+                <div class="wind-details my-12 ">
+                    <h1 class="wind-per text-xl text-white font-bold">5.6 km/h</h1>
+                    <h2 class=" text-white font-semibold">Wind speed</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+</html>
